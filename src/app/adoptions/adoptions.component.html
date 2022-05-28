@@ -1,0 +1,22 @@
+<div>
+  <table class="table w-100">
+    <thead>
+      <tr>
+        <th>PetId</th>
+        <th>Pet Name</th>
+        <th>Name</th>
+        <th>Contact</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of adoptions.results">
+        <td>{{item.petId}}</td>
+        <td>{{item.petName}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.contact}}</td>
+        <td> <button class="btn btn-primary" (click)="onClick(item._id)">Approve</button>     </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
